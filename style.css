@@ -182,6 +182,28 @@ body {
   font-weight: 300;
 }
 
+footer {
+  padding: 3rem;
+  background-color: var(--pink);
+  color: #ffffff;
+}
+
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+
 /* media Query */
 /* Extra Lrage */
 @media (max-width: 1200px) {
@@ -208,14 +230,14 @@ body {
 /* tablet */
 @media (max-width: 768px) {
   html {
-    font-size: 65%;
+    font-size: 60%;
   }
   .simply-countdown > .simply-section {
     padding: 60px;
     margin: 5px;
   }
   .mynavbar .nav-link {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
   }
   .sticky-top {
@@ -226,13 +248,13 @@ body {
 /* mobile phone */
 @media (max-width: 576px) {
   html {
-    font-size: 40%;
+    font-size: 55%;
   }
   .simply-countdown > .simply-section {
-    padding: 35px;
+    padding: 30px;
     margin: 3px;
   }
-  .sticky-top {
-    overflow: hidden;
+  .hero h1 {
+    font-size: 3.1rem;
   }
 }
