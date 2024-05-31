@@ -37,16 +37,34 @@ body {
 
 .hero h1 {
   font-family: "Sacramento", cursive;
-  font-size: 5rem;
+  font-size: 7rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.hero h3 {
+  font-size: 1.7rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  text-shadow: var(--shadow);
 }
 
 .hero h4 {
-  font-size: 1.6rem;
-  margin-bottom: 10rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 5rem;
 }
 
 .hero p {
   font-size: 1.4rem;
+}
+
+.hero .undangan {
+  font-size: 1.7rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  text-shadow: var(--shadow);
+  margin: 1rem;
 }
 
 .hero a {
@@ -119,7 +137,7 @@ body {
 
 .home .couple h3 {
   font-family: "Sacramento";
-  font-size: 2.4rem;
+  font-size: 3.6rem;
   color: var(--pink);
   font-weight: bolder;
 }
@@ -351,6 +369,9 @@ footer li {
   .home .heart {
     transform: translate(-50%) translateY(45px);
   }
+  .simply-countdown > .simply-section {
+    padding: 60px;
+  }
 }
 
 /* laptop */
@@ -389,7 +410,7 @@ footer li {
     font-size: 60%;
   }
   .simply-countdown > .simply-section {
-    padding: 60px;
+    padding: 40px;
     margin: 5px;
   }
   .mynavbar .nav-link {
@@ -417,12 +438,16 @@ footer li {
     margin: 3px;
   }
   .hero h1 {
-    font-size: 3.1rem;
+    font-size: 6rem;
   }
 
   .timeline li .timeline-image {
     width: 80px;
     height: 80px;
+  }
+
+  .home .row {
+    margin-bottom: 50px;
   }
 
   .timeline li .timeline-panel {

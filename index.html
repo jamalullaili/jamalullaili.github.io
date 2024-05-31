@@ -42,12 +42,13 @@
       class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
     >
       <main>
-        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
-        <p></p>
-        <h1>Jamalul Laili & Zulfatul Lailah</h1>
+        <h3>The Wedding off</h3>
+        <h1>Alul & Zulfa</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam:</p>
         <div class="simply-countdown"></div>
-        <a href="#home" class="btn tn-lg mt-4" onclick="enableScroll()"
+        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+        <div class="undangan"></div>
+        <a href="#home" class="btn btn-md mt-4" onclick="enableScroll()"
           >Lihat Undangan</a
         >
       </main>
@@ -402,7 +403,9 @@
             <div class="mb-3">
               <label for="status" class="form-label">Konfirmasi</label>
               <select name="status" id="status" class="form-select">
-                <option selected>Pilih salah satu</option>
+                <option selected aria-label="Disabled select example" disabled>
+                  Pilih salah satu
+                </option>
                 <option value="Hadir">Hadir</option>
                 <option value="Tidak Hadir">Tidak Hadir</option>
               </select>
@@ -568,11 +571,10 @@
 
     <script>
       const urlParams = new URLSearchParams(window.location.search);
-      const nama = urlParams.get("n") || "";
-      const pronoun = urlParams.get("p") || "";
+      const nama = urlParams.get("n");
 
-      const namaContainer = document.querySelector(".hero span");
-      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
+      const namaContainer = document.querySelector(".hero .undangan");
+      namaContainer.innerText = nama;
 
       document.querySelector("#nama").value = nama;
     </script>
