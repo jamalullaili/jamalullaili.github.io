@@ -1,3 +1,9 @@
 ---
 deployment:
-task:
+  tasks:
+    - export DEPLOYPATH=/home/jam7221/public_html/
+      - /bin/cp index.html $DEPLOYPATH
+      - /bin/cp style.css $DEPLOYPATH
+      - /bin/cp -R img $DEPLOYPATH
+      - /bin/cp -R cuntdown $DEPLOYPATH
+      - /bin/cp -R audio $DEPLOYPATH
